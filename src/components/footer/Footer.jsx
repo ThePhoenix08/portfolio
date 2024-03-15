@@ -6,7 +6,7 @@ const Footer = () => {
     <footer>
       <nav>
         <div className="nav-links-container">
-          <ul className="nav-links">
+          <ul className="nav-links-footer">
             <li><a href="#about">About</a></li>
             <li><a href="#education">Education</a></li>
             <li><a href="#projects">Projects</a></li>

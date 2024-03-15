@@ -1,59 +1,41 @@
 @import '../../scss/mixins.scss';
 
-/* nav {
-  justify-content: space-around;
-  align-items: center;
-  height: 17vh;
+header {
+  width: 100%;
+  overflow: hidden;
 
-  ul.nav-links {
-    gap: 2rem;
-    list-style: none;
-    font-size: 1.5rem;
-  }
-
-  &, ul.nav-links {
+  & nav {
     display: flex;
-  }
+    align-items: center;
+    justify-content: space-around;
 
-  & a {
-    color: black;
-    text-decoration: none;
-    text-decoration-color: white;
+    & .nav-links-header
+    {
+      display: flex;
+      gap: 2rem;
+      list-style-type: none;
+      font-size: 1.5rem;
     
-  
-    &:hover {
-      color: rgb(70, 70, 70);
-      text-decoration: underline;
-      text-underline-offset: 1rem;
-      text-decoration-color: rgb(181, 181, 181);
-    }
-  }
-
-  & div.logo {
-    font-size: 2rem;
-
-    &:hover {
-      cursor: default;
-    }
-  }
-
-  @include for-phone-only {
-    & {
-      height: 40vh;
-    }
-
-    & ul.nav-links li a {
-      font-size: 1rem;
+      & a {
+        color: black;
+        text-decoration: none;
+        text-decoration-color: grey;
+      
+        &:hover {
+          color: rgb(70, 70, 70);
+          text-decoration: underline;
+          text-underline-offset: 1rem;
+          text-decoration-color: rgb(181, 181, 181);
+        }
+      }
     }
 
     & div.logo {
-      font-size: 1.5rem;
+      font-size: 2rem;
+
+      &:hover {
+        cursor: default;
+      }
     }
   }
-} */
-
-nav {
-  display: flex;
-
-  & 
 }

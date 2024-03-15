@@ -1,0 +1,59 @@
+@import "../../scss/mixins.scss";
+
+.navbar {
+  
+  position: fixed;
+  right: 1rem;
+  top: 0;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  
+  transition: all 300ms ease;
+
+  & .nav-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1vh;
+
+    list-style-type: none;
+    margin: 0;
+    padding: 1vh;
+    border-radius: 50% / 10%;
+    border: 0.1rem var(--ui-color) solid;
+
+    & li a {
+      display: grid;
+      place-items: center;
+      width: 5vh;
+      height: 5vh;
+      border-radius: 50%;
+      font-size: 1.5rem;
+      text-decoration: none;
+      color: black;
+      cursor: default;
+      text-align: center;
+    
+      &:hover, &:active {
+        background-color: var(--ui-color);
+        color: white;
+      }
+    }
+  }
+
+  @include phone {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 10vh;
+
+    & .nav-links {
+      flex-direction: row;
+      border-radius: 10% / 50%;
+      
+    }
+  }
+}
