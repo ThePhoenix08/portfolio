@@ -1,0 +1,31 @@
+@import '../../scss/mixins.scss';
+
+/* footer {
+  height: 26vh;
+  margin: 0 1rem;
+
+  & p {
+    text-align: center;
+  }
+
+  @include for-phone-only {
+    & {
+      height: 40vh;
+    }
+
+    & nav {
+      height: fit-content;
+      margin-bottom: 2rem;
+    }
+
+    & ul.nav-links li a {
+      font-size: 1rem;
+    }
+
+    & .nav-links {
+      flex-direction: column;
+      gap: 0.5rem;
+      text-align: center;
+    }
+  }
+} */

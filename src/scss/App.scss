@@ -1,0 +1,9 @@
+@use './mixins.scss';
+
+a, .btn {
+  transition: all 200ms ease;
+}
+
+p {
+  color: rgb(85, 85, 85);
+}
