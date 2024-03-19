@@ -2,10 +2,15 @@
 
 :root {
     --poppins: "Poppins", sans-serif;
-    --text-color: #555555;
 
+    // accents
     --ui-color: rgb(53, 53, 53);
     --ui-color-2: rgb(85, 85, 85);
+
+    //colors
+    --paragraph-color: var(--ui-color-2);
+    --link-color: black;
+    --heading-color: black;
 
     scroll-behavior: smooth;
     box-sizing: border-box;

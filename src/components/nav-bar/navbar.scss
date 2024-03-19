@@ -31,11 +31,16 @@
       border-radius: 50%;
       font-size: 1.5rem;
       text-decoration: none;
-      color: black;
+      color: var(--link-color);
       cursor: default;
       text-align: center;
     
       &:hover, &:active {
+        background-color: var(--ui-color);
+        color: white;
+      }
+
+      &.active {
         background-color: var(--ui-color);
         color: white;
       }
