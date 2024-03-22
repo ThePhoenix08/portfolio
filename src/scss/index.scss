@@ -6,11 +6,14 @@
     // accents
     --ui-color: rgb(53, 53, 53);
     --ui-color-2: rgb(85, 85, 85);
+    --ui-color-3: rgb(163, 163, 163);
 
     //colors
     --paragraph-color: var(--ui-color-2);
     --link-color: black;
     --heading-color: black;
+    --border-color: var(--ui-color-3);
+
 
     scroll-behavior: smooth;
     box-sizing: border-box;

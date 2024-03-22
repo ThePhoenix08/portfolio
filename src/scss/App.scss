@@ -10,8 +10,13 @@ a, .btn {
 
 p {
   color: var(--paragraph-color);
+  text-align: center;
 }
 
 section {
   height: 100vh;
+}
+
+.react-icons {
+  vertical-align: middle;
 }

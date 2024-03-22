@@ -4,14 +4,19 @@ import Header from './sections/header/Header'
 import Footer from './sections/footer/Footer'
 import Hero from './sections/hero/Hero'
 import About from './sections/about/About'
+import Skills from './sections/skills/Skills'
+import { IconContext } from "react-icons";
 
 function App() {
   return (
     <>
-      <Header />
-      <Hero />
-      <About />
-      <Footer />
+      <IconContext.Provider value={{ className: 'react-icons' }}>
+        <Header />
+        <Hero />
+        <About />
+        <Skills />
+        <Footer />
+      </IconContext.Provider>
     </>
   )
 }
