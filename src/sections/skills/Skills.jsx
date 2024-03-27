@@ -1,7 +1,6 @@
 import React from 'react'
 import SkillBox from '../../components/SkillBox/SkillBox'
-import { FaHtml5, FaCss3Alt, FaSass, FaNodeJs, FaPython, FaGitAlt } from "react-icons/fa";
-import { IoLogoJavascript } from "react-icons/io5";
+import { FaHtml5, FaCss3Alt, FaSass, FaNodeJs, FaPython, FaGitAlt, FaReact } from "react-icons/fa";
 import { SiCplusplus } from "react-icons/si";
 import PythonLogo from '../../components/python-logo/PythonLogo';
 import JsLogo from '../../components/jsLogo/JsLogo';
@@ -21,6 +20,7 @@ const Skills = () => {
             <SkillBox color="#cc6699" component={<FaSass />} title='SASS' status='Basic'/>
             <SkillBox color="#f0db4f" component={<JsLogo />} title='Javascript' status='Experienced'/>
             <SkillBox color="#3c873a" component={<FaNodeJs />} title='Node JS' status='Basic'/>
+            <SkillBox color="#61DBFB" component={<FaReact />} title='React' status='Experienced'/>
           </div>
         </div>
         <div className="skillGroup">

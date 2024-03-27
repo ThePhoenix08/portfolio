@@ -1,0 +1,40 @@
+#contact {
+  height: max-content;
+
+  p {
+    margin: 0;
+    width: 100%;
+  
+    &.heading {
+      font-size: 2.5rem;
+      color: var(--heading-color);
+      font-weight: bold;
+    }
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+    border-radius: 3vh;
+
+    width: fit-content;
+    margin: 1.5vh auto 0 auto;
+    border: 1px solid black;
+    padding: 1.5vw;
+
+    .contactBox a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: .5vw;
+      text-decoration: none;
+      color: var(--link-color);
+
+      & svg {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
