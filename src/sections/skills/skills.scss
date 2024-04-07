@@ -1,3 +1,5 @@
+@import "../../scss/mixins.scss";
+
 #skills {
   display: flex;
   flex-direction: column;
@@ -45,6 +47,18 @@
         display: grid;
         grid-template-columns: auto auto;
         gap: 2vw;
+      }
+    }
+  }
+
+  @include for-phone-only {
+    height: 80vh;
+    & .container {
+      flex-direction: column;
+      width: 90%;
+
+      & .skillGroup {
+        padding: 5vw;
       }
     }
   }

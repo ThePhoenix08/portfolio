@@ -8,9 +8,13 @@ import Skills from './sections/skills/Skills'
 import Contact from './sections/contact/Contact'
 import { IconContext } from "react-icons";
 import Projects from './sections/projects/Projects'
+import { useMediaQuery } from 'react-responsive';
 
 function App() {
-  const [darkMode, setDarkMode] = useState(false);
+  const mode = useMediaQuery({
+    query: '(prefers-color-scheme: dark)'
+  })
+  const [darkMode, setDarkMode] = useState(mode);
 
   const toggleDarkMode = () => {
     setDarkMode((state) => (!state));

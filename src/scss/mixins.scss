@@ -1,11 +1,15 @@
-@mixin phone {
-  @media (max-width: 1000px) { @content; }
+@mixin for-phone-only {
+  @media (max-width: 600px) { @content; }
+}
+
+@mixin tablet {
+  @media (max-width: 900px) { @content; }
 }
 
 @mixin desktop {
-  @media (max-width: 1200px) { @content; }
+  @media (min-width: 901px) { @content; }
 }
 
-@mixin fullscreen {
-  @media (max-width: 1400px) { @content; }
+@mixin largeScreen {
+  @media (min-width: 1400px) { @content; }
 }

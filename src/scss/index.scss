@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+@import './mixins.scss';
 
 :root {
   --poppins: "Poppins", sans-serif;
@@ -15,6 +16,7 @@
   --border-color: var(--ui-color-3);
   --bg-color: rgb(255, 255, 255);
   --opposite-color: black;
+  --nav-bg-color: #ffffffbf;
 
 
   scroll-behavior: smooth;
@@ -33,6 +35,7 @@
     --heading-color: white;
     --border-color: var(--ui-color-3);
     --opposite-color: white;
+    --nav-bg-color: #000000bf;
   }
 }
 
@@ -41,4 +44,8 @@ body {
   margin: 0;
   padding: 0;
   background-color: var(--bg-color);
+
+  @include tablet {
+    font-size: 12px;
+  }
 }

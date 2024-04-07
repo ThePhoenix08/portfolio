@@ -6,7 +6,7 @@ import ThemeToggle from "../../components/themeToggle/ThemeToggle";
 
 const Header = ({ mode, toggleFunc }) => {
   const isMobileView = useMediaQuery({
-    query: '(max-width: 1000px)'
+    query: '(max-width: 900px)'
   })
 
   return (

@@ -1,5 +1,7 @@
+@import '../../scss/mixins.scss';
+
 #projects {
-  height: auto;
+  height: fit-content;
 
   & p {
     margin: 0;
@@ -70,9 +72,22 @@
       }
 
       & img {
-        object-fit: cover;
-        height: 50vh;
+        object-fit: contain;
+        width: 50vw;
         border-radius: 3vh;
+      }
+    }
+  }
+
+  @include tablet {
+  & .container {
+    gap: 2vh;
+    .projectBox {
+        flex-direction: column;
+        & img {
+          width: 80vw;
+          height: auto;
+        }
       }
     }
   }
