@@ -23,7 +23,7 @@
     border-radius: 50% / 10%;
     border: 0.1rem var(--ui-color) solid;
 
-    & li a {
+    & li a, .themeToggle {
       display: grid;
       place-items: center;
       width: 5vh;
@@ -37,12 +37,12 @@
     
       &:hover, &:active {
         background-color: var(--ui-color);
-        color: white;
+        color: var(--bg-color);
       }
 
       &.active {
         background-color: var(--ui-color);
-        color: white;
+        color: var(--bg-color);
       }
     }
   }

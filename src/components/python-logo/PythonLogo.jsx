@@ -9,9 +9,9 @@ const PythonLogo = () => {
         version="1.1"
         viewBox="0 0 512 512"
         width="512px"
-        xml:space="preserve"
+        xmlSpace="preserve"
         xmlns="http://www.w3.org/2000/svg"
-        xmlns:xlink="http://www.w3.org/1999/xlink"
+        xmlnsXlink="http://www.w3.org/1999/xlink"
       >
         <g id="_x32_67-python">
           <g>

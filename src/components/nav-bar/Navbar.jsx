@@ -5,8 +5,9 @@ import { FaFileCode, FaHome } from "react-icons/fa";
 import { GiSkills } from "react-icons/gi";
 import { GrContact } from "react-icons/gr";
 import "./navbar.scss";
+import ThemeToggle from '../themeToggle/ThemeToggle';
 
-const Navbar = () => {
+const Navbar = ({ mode, toggleFunc }) => {
   const [currentSection, setCurrentSection] = useState("hero");
   
   useEffect(() => {
@@ -37,6 +38,7 @@ const Navbar = () => {
         <li><a href='#skills' className={`${currentSection === 'skills' && "active"}`}><GiSkills /></a></li>
         <li><a href='#projects' className={`${currentSection === 'projects' && "active"}`}><FaFileCode /></a></li>
         <li><a href='#contact' className={`${currentSection === 'contact' && "active"}`}><GrContact /></a></li>
+        <li><ThemeToggle isDarkMode={mode} toggleDarkMode={toggleFunc} /></li>
       </ul>
     </div>
   )

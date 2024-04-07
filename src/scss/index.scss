@@ -1,26 +1,44 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
 :root {
-    --poppins: "Poppins", sans-serif;
+  --poppins: "Poppins", sans-serif;
 
+  // accents
+  --ui-color: rgb(53, 53, 53);
+  --ui-color-2: rgb(85, 85, 85);
+  --ui-color-3: rgb(163, 163, 163);
+
+  //colors
+  --paragraph-color: var(--ui-color-2);
+  --link-color: black;
+  --heading-color: black;
+  --border-color: var(--ui-color-3);
+  --bg-color: rgb(255, 255, 255);
+  --opposite-color: black;
+
+
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+
+  &.dark-mode {
     // accents
-    --ui-color: rgb(53, 53, 53);
-    --ui-color-2: rgb(85, 85, 85);
-    --ui-color-3: rgb(163, 163, 163);
+    --ui-color: rgb(240, 240, 240);
+    --ui-color-2: rgb(200, 200, 200);
+    --ui-color-3: rgb(100, 100, 100);
 
-    //colors
+    // Colors
+    --bg-color: rgb(34, 34, 34);
     --paragraph-color: var(--ui-color-2);
-    --link-color: black;
-    --heading-color: black;
+    --link-color: white;
+    --heading-color: white;
     --border-color: var(--ui-color-3);
-
-
-    scroll-behavior: smooth;
-    box-sizing: border-box;
+    --opposite-color: white;
+  }
 }
 
 body {
-    font-family: var(--poppins);
-    margin: 0;
-    padding: 0;
+  font-family: var(--poppins);
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-color);
 }

@@ -32,6 +32,7 @@ header {
 
     & div.logo {
       font-size: 2rem;
+      color: var(--link-color);
 
       &:hover {
         cursor: default;

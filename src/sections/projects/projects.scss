@@ -1,0 +1,79 @@
+#projects {
+  height: auto;
+
+  & p {
+    margin: 0;
+    width: 100%;
+  
+    &.heading {
+      font-size: 2.5rem;
+      color: var(--heading-color);
+      font-weight: bold;
+    }
+  }
+
+  & .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    margin: 0 auto;
+    gap: 1vw;
+
+    & .projectBox {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      border: 1px solid var(--border-color);
+      padding: 1.5vw;
+      border-radius: 2vh;
+      width: 90%;
+
+      &:hover {
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      }
+
+      & .projectDetails {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        gap: 1vh;
+        padding: 0 1.5vw;
+
+        & .title {
+          color: var(--heading-color);
+          font-size: 1.5rem;
+        }
+      }
+
+      & .options {
+        display: flex;
+        gap: 1vw;
+
+        & a {
+          padding: 1vh 2vh;
+          font-size: 0.7rem;
+          text-decoration: none;
+          color: var(--link-color);
+
+          border: 2px solid var(--ui-color);
+          border-radius: 20% / 50%;
+
+          &:hover {
+            background-color: var(--ui-color);
+            color: var(--bg-color);
+          }
+        }
+      }
+
+      & img {
+        object-fit: cover;
+        height: 50vh;
+        border-radius: 3vh;
+      }
+    }
+  }
+}

@@ -7,15 +7,30 @@ import About from './sections/about/About'
 import Skills from './sections/skills/Skills'
 import Contact from './sections/contact/Contact'
 import { IconContext } from "react-icons";
+import Projects from './sections/projects/Projects'
 
 function App() {
+  const [darkMode, setDarkMode] = useState(false);
+
+  const toggleDarkMode = () => {
+    setDarkMode((state) => (!state));
+  };
+
+  const root_classes = document.documentElement.classList;
+  if (darkMode) {
+    root_classes.add('dark-mode');
+  } else {
+    root_classes.remove('dark-mode');
+  }
+
   return (
     <>
       <IconContext.Provider value={{ className: 'react-icons' }}>
-        <Header />
+        <Header mode={darkMode} toggleFunc={toggleDarkMode} />
         <Hero />
         <About />
         <Skills />
+        <Projects />
         <Contact />
         <Footer />
       </IconContext.Provider>
