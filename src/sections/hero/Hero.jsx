@@ -1,7 +1,7 @@
 import React from 'react'
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import profilePic from '/portfolio-pic1.png';
-import resume from '/resume-example.pdf';
+import resume from '/Resume-Vighnesh-Brahme.pdf';
 import './Hero.scss';
 
 const Hero = () => {
